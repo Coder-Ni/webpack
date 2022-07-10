@@ -1,0 +1,17 @@
+{
+  "name": "01_webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "main": "webpack --entry ./src/main.js --output-path ./json",
+    "config-copy": "webpack --config ./webpack.config-copy.js",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
