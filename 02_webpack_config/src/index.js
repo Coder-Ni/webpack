@@ -6,4 +6,4 @@ const { dateFormat, priceFormat } = require("./js/format.js");
 console.log(dateFormat());
 console.log(priceFormat());
 
-import "./js/component/component.js";
+import "./component/component";

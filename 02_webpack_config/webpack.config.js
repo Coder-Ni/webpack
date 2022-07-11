@@ -12,4 +12,32 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "./dist"), // 必须为绝对路径
   },
+  module: {
+    rules: [
+      {
+        // 正则表达式,匹配资源
+        test: /\.css$/,
+        /*use只有一个loader时的简写*/
+        // loader: "css-loader",
+        /*loader加载顺序默认从下至上*/
+        use: [
+          "style-loader",
+
+          {
+            loader: "css-loader",
+          },
+          /*useEntry对象的简写*/
+          // "css-loader"
+        ],
+      },
+      {
+        test: /\.less$/,
+        use:[
+          "style-loader",
+          "css-loader",
+          "less-loader"
+        ]
+      }
+    ],
+  },
 };

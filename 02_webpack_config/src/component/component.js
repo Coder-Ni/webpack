@@ -1,4 +1,6 @@
-import "../../css/index.css";
+// import "css-loader!../../css/index.css";
+import "../css/index.css";
+import "./component.less";
 
 function component() {
   const div = document.createElement("div");
