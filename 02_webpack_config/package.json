@@ -6,7 +6,8 @@
   "scripts": {
     "main": "webpack --entry ./src/main.js --output-path ./json",
     "config-copy": "webpack --config ./webpack.config-copy.js",
-    "build": "webpack"
+    "build": "webpack",
+    "version": "webpack --version"
   },
   "author": "",
   "license": "ISC",
