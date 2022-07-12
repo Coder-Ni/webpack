@@ -26,18 +26,26 @@ module.exports = {
           {
             loader: "css-loader",
           },
+          // {
+          //   loader: "postcss-loader",
+          //   options: {
+          //     postcssOptions: {
+          //       plugins: [
+          //         // require("autoprefixer"),
+          //         "postcss-preset-env", // require的简写
+          //       ],
+          //     },
+          //   },
+          // },
+          "postcss-loader",
           /*useEntry对象的简写*/
           // "css-loader"
         ],
       },
       {
         test: /\.less$/,
-        use:[
-          "style-loader",
-          "css-loader",
-          "less-loader"
-        ]
-      }
+        use: ["style-loader", "css-loader", "less-loader"],
+      },
     ],
   },
 };

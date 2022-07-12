@@ -1,3 +1,5 @@
 .content {
     color: rosybrown;
+    user-select: none;
+    color: #77712343
 }
