@@ -1,0 +1,26 @@
+{
+  "name": "01_webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "main": "webpack --entry ./src/main.js --output-path ./json",
+    "config-copy": "webpack --config ./webpack.config-copy.js",
+    "build": "webpack",
+    "version": "webpack --version"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^5.2.7",
+    "less-loader": "^11.0.0",
+    "postcss-loader": "^7.0.1",
+    "postcss-preset-env": "^7.7.2",
+    "style-loader": "^3.3.1"
+  },
+  "browserslist": [
+    ">1%",
+    "last 2 version",
+    "not dead"
+  ]
+}
