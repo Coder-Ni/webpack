@@ -6,7 +6,7 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "./dist"),
     // asset资源路径
-    assetModuleFilename: "img/[name][hash:6][ext]"
+    assetModuleFilename: "img/[name][hash:6][ext]",
   },
   module: {
     rules: [
@@ -27,7 +27,7 @@ module.exports = {
         test: /\.less$/,
         use: ["style-loader", "css-loader", "less-loader"],
       },
-      /*file-loader*/ 
+      /*file-loader*/
       // {
       //   test: /\.(png|svg|jpe?g|gif)$/i,
       //   type: "asset/resource",
@@ -35,7 +35,7 @@ module.exports = {
       //     filename: "imgs/[name][hash:6][ext]"
       //   }
       // },
-      /*url-loader*/ 
+      /*url-loader*/
       // {
       //   test: /\.(png|svg|jpe?g|gif)$/i,
       //   type: "asset/inline",
@@ -46,18 +46,26 @@ module.exports = {
       //   //   }
       //   // }
       // },
-      /*url-loader limit属性*/ 
+      /*url-loader limit属性*/
       {
         test: /\.(png|svg|jpe?g|gif)$/i,
         type: "asset",
         generator: {
-          filename: "img/Ni[name][ext]"
+          filename: "img/Ni[name][ext]",
         },
         parser: {
           dataUrlCondition: {
-            maxSize: 30 * 1024
-          }
-        }
+            maxSize: 30 * 1024,
+          },
+        },
+      },
+
+      {
+        test: /\.ttf$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "font/[name][hash:2][ext]",
+        },
       },
     ],
   },

@@ -18,8 +18,12 @@ function component() {
   // bgDiv.style.backgroundColor = "pink";
   bgDiv.className = "bg-div";
 
+  const i = document.createElement("i");
+  i.className = "iconfont icon-kafei";
+
   div.appendChild(img);
   div.appendChild(bgDiv);
+  div.appendChild(i);
 
   return div;
 }
