@@ -1,0 +1,27 @@
+{
+  "name": "01_webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "main": "webpack --entry ./src/main.js --output-path ./json",
+    "config-copy": "webpack --config ./webpack.config-copy.js",
+    "version": "webpack --version",
+    "build-es": "webpack --entry ./src/es.js",
+    "build-esc": "webpack --entry ./src/es_common.js",
+    "build-ces": "webpack --entry ./src/common_es.js",
+    "build-c": "webpack --entry ./src/common.js",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0"
+  },
+  "browserslist": [
+    ">1%",
+    "last 2 version",
+    "not dead"
+  ],
+  "description": ""
+}
