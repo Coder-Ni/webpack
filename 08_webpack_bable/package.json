@@ -16,5 +16,8 @@
     "babel-loader": "^8.2.5",
     "html-webpack-plugin": "^5.5.0"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "core-js": "^3.23.5"
+  }
 }
