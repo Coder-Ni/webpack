@@ -13,9 +13,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.ts$/,
+        test: /\.js|ts$/,
         use: {
-          loader: "ts-loader",
+          loader: "babel-loader",
         },
       },
     ],
