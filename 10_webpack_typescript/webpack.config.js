@@ -14,6 +14,9 @@ module.exports = {
     rules: [
       {
         test: /\.js|ts$/,
+        // exclude解决ES Modules may not assign module.exports or exports.*
+        // 排除node_modules文件夹，使其不被编译
+        exclude:/node_modules/,
         use: {
           loader: "babel-loader",
         },
