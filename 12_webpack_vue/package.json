@@ -1,0 +1,28 @@
+{
+  "name": "01_webpack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "type-check": "tsc --noEmit --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.18.9",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "less-loader": "^11.0.0",
+    "postcss-loader": "^7.0.1",
+    "postcss-preset-env": "^7.7.2",
+    "style-loader": "^3.3.1",
+    "vue-loader": "^15.10.0",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "description": "",
+  "dependencies": {
+    "core-js": "^3.23.5",
+    "vue": "^2.6.12"
+  }
+}
