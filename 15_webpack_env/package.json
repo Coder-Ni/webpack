@@ -1,0 +1,18 @@
+{
+  "name": "13_webpack_dev_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config ./config/webpack.prod.js",
+    "serve": "webpack serve --config ./config/webpack.dev.js",
+    "common": "webpack serve --config ./config/webpack.common.js --env production",
+    "output": "webpack --config ./config/webpack.common.js --env development"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack-merge": "^5.8.0"
+  }
+}
